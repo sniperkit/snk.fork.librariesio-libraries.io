@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 var subtome = function(url) {
   var feeds = [], resource = window.location.toString();
 

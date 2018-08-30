@@ -1,3 +1,6 @@
+# Sniperkit-Bot
+# - Status: analyzed
+
 version: '3.0'
 
 volumes:
@@ -34,7 +37,7 @@ services:
   sidekiq: &app_base
     build:
       context: .
-    image: librariesio/libraries.io
+    image: sniperkit/snk.fork.librariesio-libraries.io
     environment:
       - DATABASE_URL=postgresql://librariesio:not-a-secret@postgres/librariesio
       - REDIS_URL=redis://redis:6379/1
